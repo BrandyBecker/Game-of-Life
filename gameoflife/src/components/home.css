@@ -4,16 +4,17 @@
     align-items: center;
 }
 .play-button {
-    width: 150px;
+    width: 15rem;
     height: 50px;
     font-family: 'Noto Serif TC', serif;
     font-weight: bold;
     font-size: 1.8rem;
-    color: #72587F;
+    color: #587e7f;
     background-color: rgb(176, 211, 221);
-    border: 2px solid #4F2F4F;
-    font-family: 'Odibee Sans', cursive;
+    border: 2px solid #587e7f;
+    font-family: 'MuseoModerno', cursive;
     transition: width 2s, height 2s, transform 2s;
+    margin-top: 0;
 }
 .play-button:hover{
     background-color: aqua;
