@@ -84,7 +84,7 @@ class Game extends React.Component {
 
     handleClear = () => { //clears
         this.gameboard = this.makeNewBoard();
-        this.setState({ gamecells: this.makeNewCells() , generationNum: 0 });
+        this.setState({ gamecells: this.makeNewCells() ,  isEngaged: false , generationNum: -1 }); //stops game and sets gen to 0
       };
 
       handleRandom = () => {
@@ -133,12 +133,6 @@ class Game extends React.Component {
     console.log(this.state.generationNum);
     }
 
-// 
-//    this will calculate the number of neighbors at point (x, y)
-//    @param {Array} gameboard
-//    @param {int} x
-//    @param {int} y
-//    
   neighborsMethod(gameboard, x, y) {
     let neighbors = 0;
     const dirs = [[-1, -1],[-1, 0],[-1, 1],[0, 1],[1, 1],[1, 0],[1, -1],[0, -1]];
@@ -167,8 +161,9 @@ class Game extends React.Component {
   render() {
     const { gamecells } = this.state;
     return (
-      <div>
+      <div class="flex">
         <div className="controls">
+        <div ><h3 class="gen">Generation: {this.state.generationNum}</h3>
           {this.state.isEngaged ? (
             <button className="button" onClick={this.stopGame}> 
               Stop Game
@@ -214,7 +209,7 @@ class Game extends React.Component {
             <GameCell x={gamecell.x} y={gamecell.y} key={`${gamecell.x}, ${gamecell.y}`} />
           ))}
         </div>
-          <div><h3>Generation: {this.state.generationNum}</h3>
+          
           <div>
             <div> <Link to='/' className="home-link"><button className="home-button button">👈Go Home👈</button></Link></div>
           </div> 
