@@ -30,7 +30,7 @@
     margin-bottom: 20px;
     margin-top: 50px;
     background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
     font-family: 'Ubuntu', sans-serif;
     color: white;
 }
@@ -53,7 +53,7 @@
     margin-bottom: 30px;
     margin-top: 40px;
     background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -73,5 +73,5 @@
     border: 2px solid black;
     width: 25rem;
     color: white;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
 }
