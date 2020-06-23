@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const game_cell = 20; // cell size
 const game_width = 640; // grid width
-const game_height = 440; // grid height
+const game_height = 500; // grid height
 
 
 class Game extends React.Component {
@@ -168,7 +168,26 @@ class Game extends React.Component {
     const { gamecells } = this.state;
     return (
       <div>
-        <div><h3>Generation: {this.state.generationNum}</h3>
+        <div className="controls">
+          {this.state.isEngaged ? (
+            <button className="button" onClick={this.stopGame}> 
+              Stop Game
+            </button> //stops game
+          ) : (
+            <button className="button" onClick={this.startGame}>
+              Start Game
+            </button> //starts game
+          )}
+          <button className="button" onClick={this.handleRandom}>
+            Random
+          </button> 
+          <button className="button" onClick={this.iterationMethod}>
+            One Step
+          </button>
+          <button className="button" onClick={this.handleClear}>
+            Clear
+          </button> 
+
         <div className="speed">
           Update Every{" "}
           <input
@@ -195,29 +214,10 @@ class Game extends React.Component {
             <GameCell x={gamecell.x} y={gamecell.y} key={`${gamecell.x}, ${gamecell.y}`} />
           ))}
         </div>
-        <div className="controls">
-          {this.state.isEngaged ? (
-            <button className="button" onClick={this.stopGame}> 
-              Stop Game
-            </button> //stops game
-          ) : (
-            <button className="button" onClick={this.startGame}>
-              Start Game
-            </button> //starts game
-          )}
-          <button className="button" onClick={this.handleRandom}>
-            Random
-          </button> 
-          <button className="button" onClick={this.iterationMethod}>
-            One Step
-          </button>
-          <button className="button" onClick={this.handleClear}>
-            Clear
-          </button> 
-        
+          <div><h3>Generation: {this.state.generationNum}</h3>
           <div>
-        <div> <Link to='/' className="home-link"><button className="home-button button">👈Go Home👈</button></Link></div>
-        </div>
+            <div> <Link to='/' className="home-link"><button className="home-button button">👈Go Home👈</button></Link></div>
+          </div> 
           
           </div>
           
