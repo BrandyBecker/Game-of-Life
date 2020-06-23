@@ -82,7 +82,7 @@ class Game extends React.Component {
         }
     };
 
-    handleClear = () => { //clears
+    handleClear = () => { //clears & resets gen
         this.gameboard = this.makeNewBoard();
         this.setState({ gamecells: this.makeNewCells() ,  isEngaged: false , generationNum: -1 }); //stops game and sets gen to 0
       };
