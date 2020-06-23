@@ -20,9 +20,10 @@ h1 {
   margin: 0 0;
   padding: 0.5rem;
   font-family: 'Odibee Sans', cursive;
+  font-size: 1.5rem;
 }
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'MuseoModerno', cursive;
   padding-top: 0;
 }
