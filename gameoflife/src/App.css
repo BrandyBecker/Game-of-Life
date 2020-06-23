@@ -3,7 +3,6 @@
   background-image: linear-gradient(gray, aqua);
   max-width: 100%;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -14,12 +13,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
-
 h1 {
   margin: 0 0;
   padding: 0.5rem;
