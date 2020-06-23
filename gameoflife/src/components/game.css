@@ -20,13 +20,14 @@
     background-color: #d2eaee;
     border: 2px solid rgb(0, 70, 70);
     margin: 0.25rem;
+    margin-bottom: 0;
 }
 .home-button {
     width: 150px;
-    height: 50px;
+    height: 40px;
     font-family: 'Noto Serif TC', serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #72587F;
     background-color: #d2eaee;
     border: 2px solid #4F2F4F;
@@ -34,14 +35,14 @@
     transition: width 2s, height 2s, transform 2s;
 }
 .home-button:hover {
-    background-color: aqua;
-    transform: rotate(360deg);
+    background-color: rgb(90, 196, 196);
     color: darkcyan;
     border: 2px solid darkcyan;
+    transform: rotate(360deg);
 }
 .container {
     width: 100%;
-    height: 100%;
+    height: 570px;
 }
 .speed {
     font-weight: bold;
