@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 .play-button {
     width: 150px;
     height: 50px;
@@ -11,19 +10,17 @@
     font-weight: bold;
     font-size: 1.8rem;
     color: #72587F;
-    background-color: lightgray;
+    background-color: rgb(176, 211, 221);
     border: 2px solid #4F2F4F;
     font-family: 'Odibee Sans', cursive;
     transition: width 2s, height 2s, transform 2s;
 }
-
 .play-button:hover{
     background-color: aqua;
     transform: rotate(360deg);
     color: darkcyan;
     border: 2px solid darkcyan;
 }
-
 .rules {
     height: 300px;
     width: 520px;
@@ -33,23 +30,20 @@
     margin-bottom: 20px;
     margin-top: 50px;
     background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
     font-family: 'Ubuntu', sans-serif;
     color: white;
 }
-
 .rules h3 {
     text-align: center;
     padding: 0;
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
 }
-
 .rules p {
     padding-left: 25px;
     padding-right: 25px;
 }
-
 .about {
     height: 200px;
     width: 520px;
@@ -59,26 +53,25 @@
     margin-bottom: 30px;
     margin-top: 40px;
     background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
     color: white;
     font-family: 'Ubuntu', sans-serif;
 }
-
 .about h3 {
     text-align: center;
     padding: 0;
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
 }
-
 .about p {
     padding-left: 25px;
     padding-right: 25px;
 }
-
 .go-play {
     margin-top: 40px;
     margin-bottom: 10px;
-    border: 2px dotted #4F2F4F;
-   
+    border: 2px solid black;
+    width: 25rem;
+    color: white;
+    background-image: linear-gradient(315deg, #5a7b83 0%, #0d324d 74%);
 }

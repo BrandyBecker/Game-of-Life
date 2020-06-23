@@ -12,7 +12,7 @@ class Home extends React.Component {
         <div className="play-header"><h2>⬇ Play Now! ⬇</h2></div>
           <Link exact to='/Game' className="game-link"><button className="play-button button">Play Game!</button></Link></div>
         </div>
-        <div className="rules">
+        <div className="rules"> 
             <h3>Rules of the Game</h3>
                 <p>1. Any live cell with fewer than 2 live neighbors dies, as if by underpopulation.</p>
                 <p>2. Any live cell with 2 or 3 live neighbors lives on to the next generation.</p>

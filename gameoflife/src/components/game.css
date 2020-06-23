@@ -1,14 +1,13 @@
 .gameBoard {
     position: relative;
     margin: 0 auto;
-    background-color: #9D6B84;
+    background-color: #9fbfc5;
     background-image:
-        linear-gradient(#aca2b0 1px, transparent 1px),
-        linear-gradient(90deg, #aca2b0 1px, transparent 1px);
+        linear-gradient(#c5dfe4 1px, transparent 1px),
+        linear-gradient(90deg, #c5dfe4 1px, transparent 1px);
 }
-
 .Cell {
-    background: #e0babc;
+    background: #7ca3b1;
     position: absolute;
 }
 .button {
@@ -17,13 +16,12 @@
     font-family: 'MuseoModerno', cursive;
     font-weight: bold;
     font-size: 1rem;
-    color: #72587F;
-    background-color: #EED2EE;
-    border: 2px solid #4F2F4F;
+    color: #58777f;
+    background-color: #d2eaee;
+    border: 2px solid rgb(0, 70, 70);
     margin: 7px;
     margin-top: 15px;
 }
-
 .home-button {
     width: 150px;
     height: 50px;
@@ -31,7 +29,7 @@
     font-weight: bold;
     font-size: 1.3rem;
     color: #72587F;
-    background-color: #EED2EE;
+    background-color: #d2eaee;
     border: 2px solid #4F2F4F;
     font-family: 'Odibee Sans', cursive;
     transition: width 2s, height 2s, transform 2s;
@@ -42,21 +40,18 @@
     color: darkcyan;
     border: 2px solid darkcyan;
 }
-
 .container {
     width: 100%;
     height: 800px;
 }
-
-  .speed {
+.speed {
     font-weight: bold;
     margin-bottom: 10px;
- } 
-
- .gameBoard {
-    border: 2px solid #4F2F4F;
- }
- .gen{
+} 
+.gameBoard {
+    border: 2px solid darkslategrey;
+}
+.gen{
      background-color: darkcyan;
      font-size: 1.8rem;
      padding: 0 auto;
