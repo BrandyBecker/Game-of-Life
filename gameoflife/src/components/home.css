@@ -34,6 +34,7 @@
     background-image: linear-gradient(315deg, #5a7b83 0%, #236770 74%);
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    font-weight: 100;
 }
 .rules h3 {
     text-align: center;
@@ -46,7 +47,7 @@
     padding-right: 25px;
 }
 .about {
-    height: 200px;
+    height: 230px;
     width: 520px;
     font-weight: 500;
     border: 2px solid #4F2F4F;
@@ -57,12 +58,23 @@
     background-image: linear-gradient(315deg, #5a7b83 0%, #236770 74%);
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 .about h3 {
     text-align: center;
     padding: 0;
     border-bottom: 2px solid black;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(42, 84, 90);
+    padding: 0.25rem 1rem;
+    background-color: #86b9c5;
+}
+.about a:hover{
+    background-color: #395b63;
 }
 .about p {
     padding-left: 25px;

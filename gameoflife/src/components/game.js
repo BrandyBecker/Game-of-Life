@@ -100,7 +100,7 @@ class Game extends React.Component {
         }
         this.setState({ gamecells: this.makeNewCells() });
       };
-    
+
     iterationMethod = () => {
     let newGameBoard = this.makeNewBoard();
     
