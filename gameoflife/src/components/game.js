@@ -84,7 +84,12 @@ class Game extends React.Component {
 
     handleClear = () => { //clears & resets gen
         this.gameboard = this.makeNewBoard();
-        this.setState({ gamecells: this.makeNewCells() ,  isEngaged: false , generationNum: -1 }); //stops game and sets gen to 0
+        this.setState({ gamecells: this.makeNewCells() , isEngaged: false , generationNum: -1 }); //if game in progress, stops & sets gen to 0
+      };
+
+      handleClear2 = () => { //clears & resets gen
+        this.gameboard = this.makeNewBoard();
+        this.setState({ gamecells: this.makeNewCells() , isEngaged: false , generationNum: 0 }); // if game not in progress / stopped, sets to 0
       };
 
       handleRandom = () => {
@@ -179,9 +184,14 @@ class Game extends React.Component {
           <button className="button" onClick={this.iterationMethod}>
             One Step
           </button>
-          <button className="button" onClick={this.handleClear}>
+          {this.state.isEngaged ? (
+            <button className="button" onClick={this.handleClear}>
             Clear
-          </button> 
+          </button> ) : (
+          <button className="button" onClick={this.handleClear2}>
+          Clear
+        </button> 
+          )}
 
         <div className="speed">
           Update Every{" "}
