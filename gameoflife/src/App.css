@@ -28,3 +28,15 @@ h1 {
   font-family: 'MuseoModerno', cursive;
   padding-top: 0;
 }
+.footer{
+  background-color: cadetblue;
+  padding: 0.25rem;
+}
+.footer a{
+  text-decoration: none;
+  color: black;
+  font-family: 'MuseoModerno', cursive;
+}
+.footer a:hover{
+  color: white;
+}
