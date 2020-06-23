@@ -1,7 +1,7 @@
 # Game-of-Life
 [CS Build Week](https://github.com/BrandyBecker/CS-Build-Week-1)
 
-[Deployed Project © Brandy Becker 2020](#)
+[Deployed Project © Brandy Becker 2020](https://bb-game-of-life.vercel.app/)
 
 <!-- ------------------------------------------------------------------------------------------------------------- -->
 ![Game of Life](https://i.ibb.co/MCLWm7N/Annotation-2020-06-22-205825.png)
