@@ -10,7 +10,7 @@ class Home extends React.Component {
         <div className="hompage-container">
         <div className="go-play">
         <div className="play-header"><h2>⬇ Play Now! ⬇</h2></div>
-          <Link exact to='/Game' className="game-link"><button className="play-button button">Play Game!</button></Link></div>
+          <Link exact to='/game' className="game-link"><button className="play-button button"> ➡ Play Game! ⬅</button></Link></div>
         </div>
         <div className="rules"> 
             <h3>Rules of the Game</h3>
