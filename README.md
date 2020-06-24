@@ -58,6 +58,51 @@ Each `cell` interacts with its `8` neighbours, which are the `cells` that are `h
 
 [x] buttons to clear the grid
 
+# Custom Features:
+Implement at least 3 of the following features:
+
+[ ] Create a few sample cell configurations that users can load and run
+
+[x] Add an option that creates a random cell configuration that users can run
+
+[ ] Add additional cell properties, like color or size, and incorporate them into your visualization
+
+[x] Allow users to specify the speed of the simulation
+
+[x] Provide functionality to manually step through the simulation one generation at a time, as opposed to animating automatically
+
+[ ] Allow users to change the dimension of the grid being displayed
+
+[ ] Given a specific generation, calculate the configuration of cells at that point in time, and jump to that state, bypassing animation (i.e. skip ahead n generations).
+
+[ ] If you have an idea for a custom feature on this list, run it by your TL or instructor
+
+# Rubric:
+Your simulation will receive a 2 when it satisfies the following:
+
+[x] Display includes a text area that shows the current generation of cells being displayed
+
+[x] Display includes a grid of cells, at least 25x25, that can be toggled to be alive or dead
+
+[x] Display includes working buttons that start / stop the animation and clear the grid
+
+[x] Algorithm to generate new generations of cells correctly implemented
+
+[x] At least 3 features from Custom Features section successfully implemented
+
+[x] Application includes a section outlining the rules to Conway's "Game of Life"
+
+# Stretch Goals:
+[ ] Implement 2+ additional custom features, above
+
+[x] Deploy your app to a hosting service or, for iOS, to TestFlight (or the App Store!). Web devs can see more deployment info here.
+( I deployed it to Vercel, Deployment link can be found @ top of README or in Github Website Link -- if that counts? )
+
+[ ] Write a how-to guide or blog post that walks readers through the work you did to implement your project
+
+[ ] Expand your simulation into the third dimension. Google 3D Conways Life. Google for how to do 3D stuff on your platform. Web users might check out 3D-ThreeJS, and iOS might look at SceneKit.
+
+[ ] Explore alternate algorithms for finding the nth generation, such as Hashlife
 <!-- ------------------------------------------------------------------------------------------------------------- -->
 
 # Algorithm 
