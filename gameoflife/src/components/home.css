@@ -67,14 +67,25 @@
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
 }
-.about a{
+.wikilinks{
+    border: 0px solid black;
+    background-color: none;
+    text-decoration: none;
+    color: #65d1e9;
+}
+.wikilinks:hover{
+    color: rgb(107, 191, 206);
+    cursor: pointer;
+    font-style: italic;
+}
+.gameoflife{
     color: white;
     text-decoration: none;
     border: 2px solid rgb(42, 84, 90);
     padding: 0.25rem 1rem;
     background-color: #86b9c5;
 }
-.about a:hover{
+.gameoflife:hover{
     background-color: #395b63;
     cursor:pointer;
 }
