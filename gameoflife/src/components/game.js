@@ -95,7 +95,7 @@ class Game extends React.Component {
       handleRandom = () => {
         for (let y = 0; y < this.rows; y++) {
           for (let x = 0; x < this.columns; x++) {
-            this.gameboard[y][x] = Math.random() >= 0.5;
+            this.gameboard[y][x] = Math.random() >= 0.7;
           }
         }
         this.setState({ gamecells: this.makeNewCells() });
@@ -140,8 +140,8 @@ class Game extends React.Component {
 
   neighborsMethod(gameboard, x, y) {
     let neighbors = 0;
-    const dirs = [[-1, -1],[-1, 0],[-1, 1],[0, 1],[1, 1],[1, 0],[1, -1],[0, -1]];
-    for (let i = 0; i < dirs.length; i++) {
+    const dirs = [[-1, -1],[-1, 0],[-1, 1],[0, 1],[1, 1],[1, 0],[1, -1],[0, -1]]; //8 neighbors in all directions
+    for (let i = 0; i < dirs.length; i++) { 
       const dir = dirs[i];
       let y1 = y + dir[0];
       let x1 = x + dir[1];
@@ -181,9 +181,11 @@ class Game extends React.Component {
           <button className="button" onClick={this.handleRandom}>
             Random
           </button> 
+          {/* randomizes cells on board */}
           <button className="button" onClick={this.iterationMethod}>
             One Step
           </button>
+          {/* 1 generation at a time */}
           {this.state.isEngaged ? (
             <button className="button" onClick={this.handleClear}>
             Clear
@@ -191,6 +193,8 @@ class Game extends React.Component {
           <button className="button" onClick={this.handleClear2}>
           Clear
         </button> 
+        // If game is engaged, clears board and resets generations
+        // If game is not engaged, resets generations to 0
           )}
 
         <div className="speed">
