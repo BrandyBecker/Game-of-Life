@@ -22,6 +22,11 @@
     margin: 0.25rem;
     margin-bottom: 0;
 }
+.button:hover{
+    color: #d2eaee;
+    background-color: #58777f;
+    cursor:pointer;
+}
 .home-button {
     width: 150px;
     height: 40px;
@@ -39,6 +44,7 @@
     color: darkcyan;
     border: 2px solid darkcyan;
     transform: rotate(360deg);
+    cursor:pointer;
 }
 .container {
     width: 100%;
