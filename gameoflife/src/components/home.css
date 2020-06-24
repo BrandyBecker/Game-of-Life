@@ -21,6 +21,7 @@
     transform: rotate(360deg);
     color: darkcyan;
     border: 2px solid darkcyan;
+    cursor:pointer;
 }
 .rules {
     height: 300px;
@@ -75,6 +76,7 @@
 }
 .about a:hover{
     background-color: #395b63;
+    cursor:pointer;
 }
 .about p {
     padding-left: 25px;
