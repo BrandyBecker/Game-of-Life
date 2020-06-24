@@ -22,8 +22,8 @@ class Home extends React.Component {
             </div>
         <div className="about">
             <h3>About:</h3>
-            <p>The Game of Life is a cellular automation created by John Horton Conway in 1970. Although it is called a game, it actually has zero players. The player only participates in setting the initial state, and the evolution of the patterns begins moving forward. The general setup is a grid with cells showing as 'alive' or 'dead'.</p>
-            <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">📔 Wiki 📔</a>
+            <p>The Game of Life is a <a class="wikilinks" href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automation</a> created by <a class="wikilinks" href="https://en.wikipedia.org/wiki/John_Horton_Conway">John Horton Conway</a> in 1970. Although it is called a game, it actually has zero players. The player only participates in setting the initial state, and the evolution of the patterns begins moving forward. The general setup is a grid with cells showing as 'alive' or 'dead'.</p>
+            <a class="gameoflife" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">📔 Wiki 📔</a>
             </div>
         </div>
 
